@@ -14,7 +14,7 @@ export default function Home() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/wpbutton.png" alt="WhatsApp" width={32} height={32} />
+        <Image src="/wpbutton.png" alt="WhatsApp" width={32} height={32} />
       </a>
       <Head>
         <title>Visuals Media Col</title>
