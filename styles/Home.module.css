@@ -10,3 +10,24 @@
   /* Controla la posición de la imagen de fondo */
   background-position: center;
 }
+
+/* Home.module.css */
+
+@font-face {
+  font-family: 'Ananda';
+  src: local('Ananda');
+}
+
+.ananda {
+  font-family: 'Ananda', serif;
+}
+
+.card {
+  display: block;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
