@@ -47,9 +47,12 @@ export default function Home() {
       <header className="p-4 md:p-12 text-white text-center md:text-left">
         <div className="flex flex-col md:flex-row md:space-x-8 items-center justify-center md:justify-between">
           <div className="md:w-1/2">
-            <h1 className={`${styles.ananda} text-4xl md:text-6xl`}>
-              Bienvenido a Visual Media Col!
-            </h1>
+            <Image
+              src="/titulovisual.png" // ruta a tu imagen
+              alt="Visual Media Col"
+              width={800} // ancho de la imagen, debes ajustarlo a tus necesidades
+              height={300} // altura de la imagen, debes ajustarlo a tus necesidades
+            />
             <p className="mt-4 text-lg md:text-xl font-bold">
               Vive tu propia experiencia dándole valor a quien eres
             </p>
