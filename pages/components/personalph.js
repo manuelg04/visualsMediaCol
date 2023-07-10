@@ -22,12 +22,6 @@ const PersonalPh = () => {
             objectFit="cover"
             className="rounded"
           />
-          <div className="p-4">
-            <h3 className="font-bold">
-              Título de la imagen personal {index + 1}
-            </h3>
-            <p>Descripción breve de la imagen personal {index + 1}.</p>
-          </div>
         </div>
       ))}
     </div>

@@ -2,12 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import PersonalPh from './components/personalph'
-import WeddingPh from './components/weddingph'
+import WeddingPh from './components/bussinessph'
 import BusinessPh from './components/bussinessph'
 import EngagementPh from './components/engagementph'
 import ModellingPh from './components/modellingph'
 import EventsPh from './components/eventsph'
-
 
 export default function Services() {
   return (
@@ -19,9 +18,9 @@ export default function Services() {
       </Head>
 
       <header className="bg-blue-400 text-white p-6">
-        <h1 className="text-4xl mb-2">Photography by Visuals Media Col</h1>
+        <h1 className="text-4xl mb-2 text-center md:text-left">Photography by Visuals Media Col</h1>
         <nav className="mb-4">
-          <ul className="flex space-x-4">
+          <ul className="flex flex-wrap justify-center md:justify-start space-x-4">
             <li><Link href="#personal" className="text-xl">Personal Ph</Link></li>
             <li><Link href="#wedding" className="text-xl">Wedding Ph</Link></li>
             <li><Link href="#bussiness" className="text-xl">Business Ph</Link></li>
@@ -32,7 +31,7 @@ export default function Services() {
         </nav>
       </header>
 
-      <main className="flex-grow p-6">
+      <main className="flex-grow p-6 md:px-16">
         <section id="personal">
           <PersonalPh />    
         </section>

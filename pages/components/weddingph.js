@@ -22,12 +22,6 @@ const WeddingPh = () => {
             objectFit="cover"
             className="rounded"
           />
-          <div className="p-4">
-            <h3 className="font-bold">
-              Título de la imagen de boda {index + 1}
-            </h3>
-            <p>Descripción breve de la imagen de boda {index + 1}.</p>
-          </div>
         </div>
       ))}
     </div>
