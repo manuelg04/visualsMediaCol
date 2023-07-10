@@ -149,6 +149,7 @@ export default function Home() {
           >
             Trabajos fotográficos destacados
           </animated.h2>
+          <Link className="text-2xl underline col-span-full mb-4" href="/servicios-fotografia"> Ver Portafolio  </Link>
           {["kevin1.jpg", "kevin2.jpg", "kevin3.jpg", "kevin4.jpg"].map(
             (src, index) => (
               <div className={`${styles.card} bg-white shadow-lg rounded`}>
@@ -215,6 +216,8 @@ export default function Home() {
         className="p-4 md:p-12 text-center"
       >
         <p>© 2023 Visuals Media Col. Todos los derechos reservados.</p>
+        <p>🇺🇸 +1 786-236-1628</p>
+  <p>Virginia</p>
       </footer>
     </div>
   );

@@ -1,14 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import PersonalPh from './components/personalph'
+import WeddingPh from './components/weddingph'
+import BusinessPh from './components/bussinessph'
+import EngagementPh from './components/engagementph'
+import ModellingPh from './components/modellingph'
+import EventsPh from './components/eventsph'
 
-const images = [
-  '/kevin1.jpg',
-  '/kevin2.jpg',
-  '/kevin3.jpg',
-  '/kevin4.jpg',
-  // Añade más imágenes si es necesario
-]
 
 export default function Services() {
   return (
@@ -20,19 +19,38 @@ export default function Services() {
       </Head>
 
       <header className="bg-blue-400 text-white p-6">
-        <h1 className="text-4xl">1. Photography by Visuals Media Col</h1>
-        <p className="text-xl mt-2">Ofrecemos servicios de fotografía de alta calidad para todos los eventos y necesidades.</p>
+        <h1 className="text-4xl mb-2">Photography by Visuals Media Col</h1>
+        <nav className="mb-4">
+          <ul className="flex space-x-4">
+            <li><Link href="#personal" className="text-xl">Personal Ph</Link></li>
+            <li><Link href="#wedding" className="text-xl">Wedding Ph</Link></li>
+            <li><Link href="#bussiness" className="text-xl">Business Ph</Link></li>
+            <li><Link href="#engagement" className="text-xl">Engagement Ph</Link></li>
+            <li><Link href="#modelling" className="text-xl">Modelling Ph</Link></li>
+            <li><Link href="#events" className="text-xl">Events Ph</Link></li>
+          </ul>
+        </nav>
       </header>
 
       <main className="flex-grow p-6">
-        <h2 className="text-2xl mb-4">Galería:</h2>
-        <div className="grid grid-cols-3 gap-4">
-          {images.map((src, index) => (
-            <div key={index} className="overflow-hidden rounded shadow-lg h-full">
-              <Image src={src} alt={`Foto de trabajo ${index + 1}`} width={1280} height={904} />
-            </div>
-          ))}
-        </div>
+        <section id="personal">
+          <PersonalPh />    
+        </section>
+        <section id="wedding">
+          <WeddingPh />
+        </section>
+        <section id="business">
+          <BusinessPh />
+        </section>
+        <section id="engagement">
+          <EngagementPh />
+        </section>
+        <section id="modelling">
+          <ModellingPh />
+        </section>
+        <section id="events">
+          <EventsPh />
+        </section>
 
         <section className="mt-10">
           <h2 className="text-2xl mb-4">Acerca de nuestro servicio de fotografía:</h2>
